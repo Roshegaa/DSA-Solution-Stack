@@ -1,0 +1,26 @@
+//Sum Of Series in C
+
+#include<stdio.h>
+
+void SOS(int n){
+int sum=0;
+ for(int i=0;i<n;i++){
+   sum=sum+i;
+}
+
+printf("The sum of series is:%d",sum);
+
+}
+    
+int main(){
+
+int n;
+printf("enter range of series:");
+scanf("%d",&n);
+
+SOS(n);
+
+return 0;
+
+}
+
