@@ -1,0 +1,30 @@
+//Reverse a String in C
+
+#include<stdio.h>
+
+void revstr(char const*str){
+int reversed[100];
+int h=strlen(str);
+
+for(int i=0;i<h;i++){
+  reversed[i]=str[h-1-i];
+}
+
+  printf("The reversed string :%s",reversed);
+
+}
+  
+int main(){
+char str[100];
+
+printf("enter the string");
+scanf("%s",str);
+
+revstr(str);
+
+return 0;
+
+}
+
+  
+  
