@@ -1,0 +1,24 @@
+//Print 1 to N without loop in C
+
+#include<stdio.h>
+
+void printwithoutloop(int current,int n){
+if(current>n){
+ return;
+}
+printf("%d",current);
+printf("\t");
+printwithoutloop(current+1,n);
+}
+
+int main(){
+
+int n;
+printf("enter the limit value(N value):");
+scanf("%d",&n);
+
+printwithoutloop(1,n);
+
+return 0;
+
+}
