@@ -1,0 +1,29 @@
+//Array Value equal to Index value in C
+
+#include<stdio.h>
+
+void valuematchcheck(int *arr,int n){
+  for(int i=1;i<=n;i++){
+    if(arr[i]==i){
+      printf("%d\t",i);
+    }
+  }
+}
+
+
+int main(){
+int n;
+  printf("Enter Array Size or Length:");
+  scanf("%d",&n);
+
+int arr[n];
+  for(int i=1;i<=n;i++){
+    printf("Enter Element:\t");
+    scanf("%d",&arr[i]);
+}
+
+valuematchcheck(arr,n);
+
+return 0;
+
+}
