@@ -1,0 +1,26 @@
+//GCD and LCM in C
+
+#include<stdio.h>
+void gcd(int a,int b){
+while(b!=0){
+int temp=b;
+b=a%b;
+a=temp;
+  }
+}
+void lcm(int a,int b){
+int d=(a*b)/gcd(a,b);
+
+}
+
+int main(){
+
+int a, b;
+printf("enter the numbers a and b:");
+scanf("%d %d",&a,&b);
+
+printf("LCM:%d  GCD:%d",lcm(a,b),gcd(a,b));
+
+return 0;
+
+}
