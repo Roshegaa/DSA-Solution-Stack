@@ -1,0 +1,40 @@
+//Immediate Smaller element in C
+
+#include<stdio.h>
+
+void immediatesmaller(int*arr,int n){
+for(int i=0;i<=n;i++){
+  if(i<n-1){
+    if(arr[i]>arr[i+1]){
+      printf("%d",arr[i+1]);
+  }
+    else {
+      printf("-1");
+  }
+}
+
+else{
+  printf("-1");
+    return;
+  }
+}
+  return;
+}
+
+int main(){
+
+int n;
+printf("enter array size:");
+scanf("%d",&n);
+
+int arr[n];
+for(int i=0;i<n;i++){
+printf("enter array elements:");
+scanf("%d",&arr[i]);
+}
+
+immediatesmaller(arr,n);
+
+return 0;
+
+}
