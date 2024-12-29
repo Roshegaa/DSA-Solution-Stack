@@ -1,0 +1,28 @@
+//Alternates in array in C
+
+#include<stdio.h>
+void alternatesinarray(int*arr,int n){
+
+for(int i=0;i<n;i++){
+  printf("%d",arr[i]);
+    i=i+1;
+  }
+return;
+}
+ 
+int main(){
+
+int n;
+printf("enter the array size:");
+scanf("%d",&n);
+
+int arr[n];
+for(int i=0;i<n;i++){
+  printf("enter array elements:");
+    scanf("%d",&arr[i]);
+}
+
+alternatesinarray(arr,n);
+
+return 0;
+}
