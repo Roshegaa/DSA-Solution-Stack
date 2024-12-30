@@ -1,0 +1,23 @@
+//Sum of N terms in C
+
+#include<stdio.h>
+
+void sum(int N);
+int sum=0;
+for(int i=0;i<N;i++){
+sum=sum+(i*i*i);
+}
+printf("%d",sum);
+return;
+}
+int main(){
+
+int N;
+printf("enter the limit:");
+scanf("%d",&N);
+
+sum(N);
+
+return 0;
+
+}
