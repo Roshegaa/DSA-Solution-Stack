@@ -1,0 +1,48 @@
+//Palindromic Array in C
+
+#include<stdio.h>
+
+int paliarray(int num){
+int original=num;
+int reversed=0;
+
+while(num!=0){
+reversed=reversed*10+num%10;
+num=num/10;
+}
+
+return original==reversed;
+}
+
+void check(int*arr,int n){
+  for(int i=0;i<n;i++){
+    if(!paliarray(arr[i])){
+      printf("false");
+  
+    return;
+    }
+}
+
+    printf("true");
+
+return ;
+
+}
+
+int main(){
+
+int n;
+printf("enter the array size:");
+scanf("%d",&n);
+
+int arr[n];
+for(int i=0;i<n;i++){
+printf("enter array elements:");
+scanf("%d",&arr[i]);
+}
+
+check(arr,n);
+
+return 0;
+
+}
