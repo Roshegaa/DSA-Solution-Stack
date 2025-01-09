@@ -1,0 +1,27 @@
+//Decision Making in C
+
+#include<stdio.h>
+void decision (int n,int m){
+if (n<m){
+  printf("lesser");
+}
+else if(n>m){
+  printf("greater");
+}
+else{
+  printf("equal");
+  }
+return;
+}
+
+int main(){
+
+int n,m;
+printf("enter the value of n and m : ");
+scanf("%d %d",&n,&m);
+
+decision(n,m);
+
+return 0;
+
+}
