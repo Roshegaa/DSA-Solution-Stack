@@ -1,0 +1,31 @@
+//Searching for a pattern in C
+
+#include<stdio.h>
+#include<string.h>
+
+void pattern(char const* s,char const* p){
+char *result=strstr(s,p);
+if(result!=NULL){
+  int index=result-s;
+    printf("%d",index);
+}
+else{
+  printf("not found");
+  }
+return;
+}
+
+int main(){
+char s[100];
+printf("enter the string:");
+scanf("%s",s);
+
+char p[100];
+printf("enter pattern to find:");
+scanf("%s",p);
+
+pattern(s,p);
+
+return 0;
+
+}
