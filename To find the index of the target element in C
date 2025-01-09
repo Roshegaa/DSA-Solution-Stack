@@ -1,0 +1,36 @@
+//To find the index of the target element in C
+
+#include<stdio.h>
+void targetindex(int*arr,int n,int target){
+int found=0;
+ for(int i=0;i<n;i++){
+   if(arr[i]==target){
+     found=1;
+       printf("%d",i);
+         return;
+    }
+ }
+  if(!found){
+      printf("-1");
+   }
+}
+int main(){
+int n;
+printf("enter the array size:");
+scanf("%d",&n);
+
+int arr[n];
+for(int i=0;i<n;i++){
+printf("enter array element %d :",i);
+scanf("%d",&arr[i]);
+}
+
+int target;
+printf("enter the target element:");
+scanf("%d",&target);
+
+targetindex(arr,n,target);
+
+return 0;
+
+}
