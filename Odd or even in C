@@ -1,0 +1,18 @@
+//To check odd or even in C
+#include<stdio.h>
+void oddeve(int n){
+  if(n%2==0){
+    printf("even");
+}
+  else{
+    printf("odd");
+}
+}
+
+int main(){
+int n;
+printf("enter number:");
+scanf("%d",&n);
+oddeve(n);
+return 0;
+}
